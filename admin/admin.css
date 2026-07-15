@@ -1,7 +1,3 @@
-/* ================================================
-   S-Five Admin Panel — Stylesheet
-   ================================================ */
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Jost:wght@300;400;500;600&display=swap');
 
 :root {
@@ -31,7 +27,6 @@ body { font-family: 'Jost', sans-serif; color: var(--text-dark); background: var
 a { text-decoration: none; color: inherit; }
 h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 
-/* ====== LOGIN ====== */
 .login-body {
     min-height: 100vh;
     display: flex;
@@ -100,7 +95,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 .back-link { display: block; text-align: center; margin-top: 1.25rem; font-size: 0.85rem; color: var(--text-light); }
 .back-link:hover { color: var(--green-mid); }
 
-/* ====== ADMIN LAYOUT ====== */
 .admin-body { background: var(--bg); }
 
 .admin-layout {
@@ -108,7 +102,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
     min-height: 100vh;
 }
 
-/* SIDEBAR */
 .sidebar {
     width: var(--sidebar-w);
     background: var(--sidebar-bg);
@@ -210,7 +203,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 }
 .view-site:hover { color: var(--gold-light); }
 
-/* MAIN */
 .admin-main {
     margin-left: var(--sidebar-w);
     flex: 1;
@@ -236,7 +228,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 
 .admin-content { padding: 2rem; flex: 1; }
 
-/* ====== CARDS ====== */
 .card {
     background: white;
     border-radius: var(--radius);
@@ -258,7 +249,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 .card-link { font-size: 0.82rem; color: var(--green-mid); font-weight: 500; }
 .card-link:hover { text-decoration: underline; }
 
-/* ====== STATS GRID ====== */
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -289,7 +279,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 .stat-info span { display: block; font-size: 0.75rem; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 600; }
 .stat-info strong { font-size: 1.5rem; font-weight: 700; color: var(--sidebar-bg); }
 
-/* ====== DASHBOARD MID ====== */
 .dash-mid-grid {
     display: grid;
     grid-template-columns: 1fr 360px;
@@ -297,7 +286,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
     margin-bottom: 1.5rem;
 }
 
-/* QUICK ACTIONS */
 .quick-actions { display: flex; flex-direction: column; gap: 0.75rem; }
 
 .qa-btn {
@@ -316,7 +304,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 .qa-btn strong { display: block; color: var(--sidebar-bg); font-size: 0.88rem; }
 .qa-btn small { color: var(--text-light); font-size: 0.78rem; }
 
-/* ====== TABLE ====== */
 .table-wrap { overflow-x: auto; }
 
 .admin-table {
@@ -350,7 +337,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 
 .empty-row { text-align: center; color: var(--text-light); padding: 2.5rem !important; font-style: italic; }
 
-/* ====== BADGES ====== */
 .badge {
     display: inline-block;
     padding: 0.28rem 0.7rem;
@@ -373,7 +359,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
     font-weight: 600;
 }
 
-/* ====== BUTTONS ====== */
 .btn-sm {
     display: inline-block;
     padding: 0.3rem 0.75rem;
@@ -423,7 +408,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 }
 .btn-save:hover { background: var(--green-mid); }
 
-/* ACTION BAR */
 .action-bar {
     display: flex;
     align-items: center;
@@ -456,7 +440,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 .btn-action.neutral:hover:not(:disabled) { background: #444; color: white; border-color: #444; }
 .btn-action:disabled { opacity: 0.4; cursor: not-allowed; }
 
-/* ====== FILTER BAR ====== */
 .filter-bar { margin-bottom: 1.25rem; }
 
 .filter-form {
@@ -504,7 +487,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 }
 .btn-filter-clear:hover { color: var(--earth); }
 
-/* ====== DETAIL VIEW ====== */
 .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 1.5rem; }
 .detail-section h4 { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-light); margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 1.5px solid var(--border); }
 .detail-row { display: flex; justify-content: space-between; padding: 0.55rem 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; }
@@ -512,7 +494,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 .detail-row span { color: var(--text-light); }
 .detail-row strong { color: var(--text-dark); text-align: right; max-width: 60%; }
 
-/* ====== ADMIN FORM ====== */
 .admin-form .form-group { display: flex; flex-direction: column; gap: 0.4rem; margin-bottom: 1.25rem; }
 .admin-form .form-group:last-child { margin-bottom: 0; }
 .admin-form label { font-size: 0.78rem; font-weight: 700; color: var(--text-mid); text-transform: uppercase; letter-spacing: 0.04em; }
@@ -531,7 +512,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 .admin-form textarea { resize: vertical; }
 .form-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
 
-/* ====== COTTAGES ADMIN GRID ====== */
 .cottages-admin-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 1.25rem; }
 
 .cottage-admin-card {
@@ -556,7 +536,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
 .tag-sm { background: var(--bg); color: var(--text-mid); font-size: 0.7rem; padding: 0.2rem 0.5rem; border-radius: 4px; }
 .cac-actions { display: flex; gap: 0.4rem; flex-wrap: wrap; }
 
-/* ====== GUESTS ====== */
 .guest-name-cell { display: flex; align-items: center; gap: 0.75rem; }
 .guest-avatar {
     width: 32px; height: 32px;
@@ -567,11 +546,9 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
     font-size: 0.8rem; font-weight: 700; flex-shrink: 0;
 }
 
-/* ====== REPORTS ====== */
 .report-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
 .report-filter { flex-wrap: nowrap; }
 
-/* ====== ALERTS ====== */
 .alert-success {
     background: #d1e7dd;
     border: 1.5px solid #a3cfbb;
@@ -593,7 +570,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
     font-size: 0.9rem;
 }
 
-/* ====== PRINT ====== */
 @media print {
     .sidebar, .admin-topbar, .filter-bar, .btn-filter, .card-link, .btn-sm, .action-bar { display: none !important; }
     .admin-main { margin-left: 0; }
@@ -601,7 +577,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
     .card { box-shadow: none; border: 1px solid #ddd; }
 }
 
-/* ====== RESPONSIVE ====== */
 @media (max-width: 1024px) {
     :root { --sidebar-w: 220px; }
     .dash-mid-grid { grid-template-columns: 1fr; }
@@ -618,7 +593,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
     .report-filter { flex-wrap: wrap; }
 }
 
-/* ── ADMIN SIDEBAR CIRCULAR LOGO (v4) ── */
 .sidebar-logo-img {
     width: 44px;
     height: 44px;
@@ -630,7 +604,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
     box-shadow: 0 2px 8px rgba(0,0,0,0.3);
 }
 
-/* ── ADMIN LOGIN CIRCULAR LOGO ── */
 .admin-login-logo {
     width: 44px;
     height: 44px;
@@ -644,7 +617,6 @@ h1,h2,h3,h4 { font-family: 'Jost', sans-serif; }
     background: #fff;
 }
 
-/* ── COTTAGE AVAILABILITY MINI BAR (dashboard) ── */
 .cottage-mini-bar {
     display: flex;
     height: 6px;
